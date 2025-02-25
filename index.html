@@ -36,8 +36,9 @@
             margin: 5px;
         }
         .articles {
-            text-align: right;
+            text-align: left;
             padding: 10px;
+            direction:ltr; 
         }
         .footer {
             margin-top: 20px;
@@ -53,7 +54,14 @@
         body { 
             background: white;
         }
+        
+        .imge-book { width:400px;} 
+         
         @media (max-width: 600px) {
+        
+        	.imge-book { 
+        		width:250px; 
+        	} 
 
             .imged{ 
             width: 10%; 
@@ -82,7 +90,8 @@
             a:hover { 
                 color: blue;
             }
-
+            
+            
     </style>
 </head>
 <body>
@@ -94,27 +103,33 @@
         <img src="imges/Fz.jpg" alt="Profile Image" class="profile-img">
         <h2>Fariborz Palangi</h2>
         <p>Faculty Electrical Engineering</p>
-        <div class="buttons">
-            <a href="#">دانلود پی دی اف</a>
-            <a href="#">ORCID</a>
-            <a href="#">Google Scholar</a>
-            <a href="#">Speinget</a>
-            <a href="#">Civilica</a>
-            <a href="#">Research Gate</a>
-            <a href="#">Elmnet.ir</a>
-        </div>
         <h3>Degree: Master of Electrical Engineering</h3>
+        <a href="pdf/MyResume-222222 (1).pdf" style="background-color: #0099ff; color: white;padding: 5px;">دانلود پی دی اف</a>
+        
+        <br> <br>
+        <div style="direction: rtl;" class="buttons">
+            <a href="#">Google Scholar</a>
+            <a href="#">ORCID</a>
+            <a href="#">Springer</a>
+            <a href="#">Civilica</a>
+            <a href="#">Elmnet.ir</a>
+            <a href="#">Reserch Gate</a>
+        </div>
         <div class="articles">
             <h3>مقاله ها:</h3>
-            <ol>
-                
-                <a href="pdf/Laser Quantum .pdf" download="Laser Quantum .pdf"> <li>Laser Quantum Simulation by Photonic Crystals.</li> </a>
-                <a href="pdf/Photonic crystal lasers .pdf" download="Photonic crystal lasers .pdf"> <li>Portable solar power supply system.</li> </a>
-                <a href="pdf/Portable solar .pdf" download="Portable solar .pdf"> <li>Design and simulation of three-dimensional photonic crystal lasers.</li> </a>
-                <a href="pdf/Xamining Examples .pdf" download="Xamining Examples .pdf"> <li>xamining Examples of Crimes Against Humanity in
-International Law.</li> </a>
-            </ol>
+            
+                <a href="pdf/Laser Quantum .pdf" download="Laser Quantum .pdf"> 1. Laser Quantum Simulation by Photonic Crystals.</a>
+                <br><br>
+                <a href="pdf/Photonic crystal lasers .pdf" download="Photonic crystal lasers .pdf"> 2. Portable solar power supply system.</a>
+                <br><br>
+                <a href="pdf/Portable solar .pdf" download="Portable solar .pdf">3. Design and simulation of three-dimensional photonic crystal lasers.</a>
+                	<br><br>
+                <a href="pdf/Xamining Examples .pdf" download="Xamining Examples .pdf">4. xamining Examples of Crimes Against Humanity in
+International Law.</a>
+           
         </div>
+        <h2>کتاب</h2>
+        <img class="imge-book" src="imges/book.jpg"> 
         <h3>سوابق اجرایی</h3>
         <a href="pdf/MyResume-222222 (1).pdf" download="MyResume-222222 (1).pdf"><p class="footer">برای دریافت اطلاعات کامل تر آموزشی، پژوهشی و اجرایی اینجانب به رزومه (CV) مراجعه کنید.</p></a> 
         </div>
